@@ -14,7 +14,7 @@ This repository contains the reference code for the paper "End-to-End Model Depl
 ```bash
 git clone https://github.com/PangWinnie0219/GradCAMDownstreamTask.git
 ```
-3. Install the packages required using the `requirements.txt` file:
+2. Install the packages required using the `requirements.txt` file:
 
 ```bash
 pip install -r requirements.txt 
