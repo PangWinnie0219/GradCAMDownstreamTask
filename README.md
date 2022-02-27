@@ -11,12 +11,12 @@ This repository contains the reference code for the paper "End-to-End Model Depl
 ## Environment setup
 1. Clone the repository 
 
-```
+```bash
 git clone https://github.com/PangWinnie0219/GradCAMDownstreamTask.git
 ```
 3. Install the packages required using the `requirements.txt` file:
 
-```
+```bash
 pip install -r requirements.txt 
 ```
 
@@ -45,15 +45,21 @@ Place the trained model file inside the `./best_model_checkpoints`.
 
 ## Grad-CAM Heatmap and Bounding Box Visualization
 
+cd into the `utils` directory
+
+```bash
+cd utils
+```
+
 You can visualise the Grad-CAM heatmap and bounding box using
 
-```
+```bash
 python3.6 miccai_bbox.py
 ```
 
 In order to select a specific frame and heatmap of specific class, you can define them with `bidx` and `tclass` respectively. For example if you want to view the heatmap 
 for class 3 of the 15th image in the dataset, you can run the following: 
-```
+```bash
 python3.6 miccai_bbox.py --bidx 15  --tclass 3
 ```
 
@@ -74,23 +80,23 @@ This method is similar to the conventional feature extraction method.
 The region images will be cropped from the raw image and these cropped region images will be forwarded to the model again.
 
 1. Crop the region images based on the predicted bounding box 
-```
-python3.6 crop_bbox.py 
+```bash
+python3.6 utils/crop_bbox.py 
 ```
 2. Forward the cropped region image to the model again
-```
+```bash
 python3.6 image_extract_feature.py
 ```
 
 ### 2. Method 2 (Localization + Detection):
 The features is extracted from the feature map of the Grad-CAM model based on the bounding box coordinates.
-```
+```bash
 python3.6 bbox_extract_feature.py
 ```
 
 ### 3. Method 3 (Localization):
 The features is extracted from the feature map of the Grad-CAM model directly based on the heatmap (no bounding box generation).
-```
+```bash
 python3.6 heatmap_extract_feature.py
 ```
 
