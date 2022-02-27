@@ -104,10 +104,10 @@ The features extracted can be used for the downstream task such as:
 
 - Captioning
     * Paper: [Class-Incremental Domain Adaptation with Smoothing and Calibration for Surgical Report Generation](https://arxiv.org/pdf/2107.11091.pdf)
-    * Official implementation [code](https://github.com/XuMengyaAmy/CIDACaptioning/blob/master/README.md)
+    * Official implementation [code](https://github.com/XuMengyaAmy/CIDACaptioning)
 - Interaction
     * Paper: [Global-Reasoned Multi-Task Learning Model for Surgical Scene Understanding](https://arxiv.org/pdf/2201.11957.pdf)
-    * Official implementation [code](https://github.com/lalithjets/Global-reasoned-multi-task-model/blob/master/README.md)
+    * Official implementation [code](https://github.com/lalithjets/Global-reasoned-multi-task-model)
 
 
 
