@@ -61,7 +61,7 @@ The threshold, T can be defined using `threshold` to see the effect of threshold
 
 
 ### Examples of the Grad-CAM heatmap and bounding box
-
+(to be added)
 
 ## Feature Extraction 
 Set the result_filename in the code to accordingly if you are training the Grad-CAM model from scratch. If you are using our checkpoint, set `gc_model` to `1`, `2` `3` or `4`
