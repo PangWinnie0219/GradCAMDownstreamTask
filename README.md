@@ -5,14 +5,14 @@ This repository contains the reference code for the paper "End-to-End Model Depl
 
 ## Introduction
 
-To be added
+**To be added**
 
 
 ## Environment setup
 1. Clone the repository 
 
 ```
-git clone https://github.com/PangWinnie0219/Grad-CAM.git
+git clone https://github.com/PangWinnie0219/GradCAMDownstreamTask.git
 ```
 3. Install the packages required using the `requirements.txt` file:
 
@@ -20,14 +20,14 @@ git clone https://github.com/PangWinnie0219/Grad-CAM.git
 pip install -r requirements.txt 
 ```
 
-Note: Python 3.6 is required to run our code.
+**Note: Python 3.6 is required to run our code.**
 
 
 ## Data Preprocessing
 
 We are using the dataset from [Cholec80](http://camma.u-strasbg.fr/datasets) and Robotic Instrument Segmentation Dataset from MICCAI2018 Endoscopic Vision Challenge.
 
-To be added
+**To be added**
 
 ## Grad-CAM Model Training
 
@@ -35,10 +35,10 @@ Run `python3.6 baseline.py` to start training the Grad-CAM model. Ensure `save` 
 
 Otherwise, you can downloaded the trained model file:
 
-- GC-A: [miccai2018_9class_ResNet50_256,320_32_lr_0.001_dropout_0.2_best_checkpoint.pth.tar](to be added)
-- GC-B: [miccai2018_9class_cholecResNet50_256,320_32_lr_0.001_dropout_0.2_best_checkpoint.pth.tar] (to be added)
-- GC-C: [miccai2018_11class_cholec_ResNet50_256,320_32_lr_0.001_best_checkpoint.pth.tar] (to be added)
-- GC-D: [combine_miccai18_ResNet50_256,320_170_best_checkpoint.pth.tar] (to be added)
+- GC-A: [miccai2018_9class_ResNet50_256,320_32_lr_0.001_dropout_0.2_best_checkpoint.pth.tar] (**To be added**)
+- GC-B: [miccai2018_9class_cholecResNet50_256,320_32_lr_0.001_dropout_0.2_best_checkpoint.pth.tar] (**To be added**)
+- GC-C: [miccai2018_11class_cholec_ResNet50_256,320_32_lr_0.001_best_checkpoint.pth.tar] (**To be added**)
+- GC-D: [combine_miccai18_ResNet50_256,320_170_best_checkpoint.pth.tar] (**To be added**)
 
 Place the trained model file inside the `./best_model_checkpoints`.
 
@@ -61,7 +61,7 @@ The threshold, T can be defined using `threshold` to see the effect of threshold
 
 
 ### Examples of the Grad-CAM heatmap and bounding box
-(to be added)
+**To be added**
 
 ## Feature Extraction 
 Set the result_filename in the code to accordingly if you are training the Grad-CAM model from scratch. If you are using our checkpoint, set `gc_model` to `1`, `2` `3` or `4`
@@ -108,22 +108,3 @@ The features extracted can be used for the downstream task such as:
 - Interaction
     * Paper: [Global-Reasoned Multi-Task Learning Model for Surgical Scene Understanding](https://arxiv.org/pdf/2201.11957.pdf)
     * Official implementation [code](https://github.com/lalithjets/Global-reasoned-multi-task-model)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
