@@ -71,7 +71,7 @@ The threshold, T can be defined using `threshold` to see the effect of threshold
 
 ## Feature Extraction 
 Set the result_filename in the code to accordingly if you are training the Grad-CAM model from scratch. If you are using our checkpoint, set `gc_model` to `1`, `2` `3` or `4`
-to load the checkpoint from GC-A, GC-B, GC-C and GC-D respectively.
+to load the checkpoint from GC-A, GC-B, GC-C and GC-D respectively. If you are using `gc_model` = `1` or `2`, set `cls` to 9, else, set `cls` to 11.
 
 
 ### 1. Method 1 (Raw Image):
