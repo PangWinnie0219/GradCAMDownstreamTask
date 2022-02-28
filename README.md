@@ -109,8 +109,8 @@ Code adopted and modified from : [pytorch-grad-cam](https://github.com/jacobgil/
 The features extracted can be used for the downstream task such as:
 
 - Captioning
-    * Paper: [Class-Incremental Domain Adaptation with Smoothing and Calibration for Surgical Report Generation](https://arxiv.org/pdf/2107.11091.pdf)
-    * Official implementation [code](https://github.com/XuMengyaAmy/CIDACaptioning)
+    * Paper: [Meshed-Memory Transformer for Image Captioning ](https://arxiv.org/abs/1912.08226)
+    * Official implementation [code](https://github.com/aimagelab/meshed-memory-transformer)
 - Interaction
-    * Paper: [Global-Reasoned Multi-Task Learning Model for Surgical Scene Understanding](https://arxiv.org/pdf/2201.11957.pdf)
-    * Official implementation [code](https://github.com/lalithjets/Global-reasoned-multi-task-model)
+    * Paper: [Visual-Semantic Graph Attention Network for Human-Object Interaction Detecion](https://arxiv.org/abs/2001.02302)
+    * Official implementation [code](https://github.com/birlrobotics/vs-gats)
