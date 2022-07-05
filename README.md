@@ -112,5 +112,5 @@ The features extracted can be used for the downstream task such as:
     * Paper: [Meshed-Memory Transformer for Image Captioning ](https://arxiv.org/abs/1912.08226)
     * Official implementation [code](https://github.com/aimagelab/meshed-memory-transformer)
 - Interaction
-    * Paper: [Visual-Semantic Graph Attention Network for Human-Object Interaction Detecion](https://arxiv.org/abs/2001.02302)
-    * Official implementation [code](https://github.com/birlrobotics/vs-gats)
+    * Paper: [CogTree: Cognition Tree Loss for Unbiased Scene Graph Generation](https://arxiv.org/abs/2009.07526)
+    * Official implementation [code](https://github.com/CYVincent/Scene-Graph-Transformer-CogTree)
