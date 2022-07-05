@@ -1,4 +1,4 @@
-# End-to-End Model Deployment Using Grad-CAM for Medical Downstream Task
+# Rethinking Object Localization: Gradient-based Localization For End-to-End Surgical Downstream Tasks
 
 This repository contains the reference code for the paper "End-to-End Model Deployment Using Grad-CAM for Medical Downstream Task"
 
