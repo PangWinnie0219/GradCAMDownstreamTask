@@ -1,9 +1,3 @@
-"""
-Project         : Model Deployment Using Grad-CAM for Medical Downstream Tasks
-Lab             : MMLAB, National University of Singapore
-contributors    : Pang Winnie, Sai Mitheran, Xu Mengya, Lalithkumar Seenivasan, Mobarakol Islam, Hongliang Ren
-"""
-
 from gradcam_library import GradCAM
 from pytorch_grad_cam.utils.image import show_cam_on_image
 from bbox_library import plot_multiplebbox, plot_gtbox
