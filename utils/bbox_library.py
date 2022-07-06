@@ -1,8 +1,4 @@
 """
-Project         : Model Deployment Using Grad-CAM for Medical Downstream Tasks
-Lab             : MMLAB, National University of Singapore
-contributors    : Pang Winnie, Sai Mitheran, Xu Mengya, Lalithkumar Seenivasan, Mobarakol Islam, Hongliang Ren
-
 Note            : get rectangle coordinates and show boundary box based on gradcam output
 
 GradCAM code modified from https://github.com/jacobgil/pytorch-grad-cam
