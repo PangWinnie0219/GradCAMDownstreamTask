@@ -1,8 +1,3 @@
-"""
-Project         : Model Deployment Using Grad-CAM for Medical Downstream Tasks
-Lab             : MMLAB, National University of Singapore
-contributors    : Pang Winnie, Sai Mitheran, Xu Mengya, Lalithkumar Seenivasan, Mobarakol Islam, Hongliang Ren
-"""
 
 import torch
 import torch.nn as nn
