@@ -1,8 +1,4 @@
 """
-Project         : Model Deployment Using Grad-CAM for Medical Downstream Tasks
-Lab             : MMLAB, National University of Singapore
-contributors    : Pang Winnie, Sai Mitheran, Xu Mengya, Lalithkumar Seenivasan, Mobarakol Islam, Hongliang Ren
-
 Task            : Extract features based on heatmap 
                 1. Feature map layer to be extracted: layer 3 [1024,16,20]
                 2. Get the gradcam heatmap based on the predicted class only
