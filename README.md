@@ -63,7 +63,7 @@ for class 3 of the 15th image in the dataset, you can run the following:
 python3.6 miccai_bbox.py --bidx 15  --tclass 3
 ```
 
-The threshold, T can be defined using `threshold` to see the effect of thresholding to the bounding box generation. 
+The threshold, T_ROI can be defined using `threshold` to see the effect of thresholding to the bounding box generation. 
 
 
 ### Examples of the Grad-CAM heatmap and bounding box
