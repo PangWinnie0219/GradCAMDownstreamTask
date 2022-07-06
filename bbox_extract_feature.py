@@ -1,8 +1,4 @@
 """
-Project         : Model Deployment Using Grad-CAM for Medical Downstream Tasks
-Lab             : MMLAB, National University of Singapore
-contributors    : Pang Winnie, Sai Mitheran, Xu Mengya, Lalithkumar Seenivasan, Mobarakol Islam, Hongliang Ren
-
 Task            : Extract features from the layers of the model 
                     1. Layers to be extracted from depands on the size (area) of pred bbox
                         - bbox > half of raw image: layer 4
