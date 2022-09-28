@@ -1,6 +1,6 @@
-# Rethinking Object Localization: Gradient-based Localization For End-to-End Surgical Downstream Tasks
+# Rethinking Feature Extraction: Gradient-based Localized Feature Extraction for End-to-End Surgical Downstream Tasks
 
-This repository contains the reference code for the paper "Rethinking Object Localization: Gradient-based Localization For End-to-End Surgical Downstream Tasks"
+This repository contains the reference code for the paper "Rethinking Feature Extraction: Gradient-based Localized Feature Extraction for End-to-End Surgical Downstream Tasks"
 
 
 ## Introduction
@@ -74,10 +74,10 @@ Set the result_filename in the code to accordingly if you are training the Grad-
 to load the checkpoint from GC-A, GC-B, GC-C and GC-D respectively. If you are using `gc_model` = `1` or `2`, set `cls` to 9, else, set `cls` to 11.
 
 
-### 1. Method 1 (Raw Image):
+### 1. Variant 1: Localization and Naive FE (LN-FE):
 
 This method is similar to the conventional feature extraction method. 
-The region images will be cropped from the raw image and these cropped region images will be forwarded to the model again.
+The region images will be cropped from the raw image and these cropped region images will be forwarded to the feature extractor.
 
 1. Crop the region images based on the predicted bounding box 
 ```bash
@@ -88,14 +88,14 @@ python3.6 utils/crop_bbox.py
 python3.6 image_extract_feature.py
 ```
 
-### 2. Method 2 (Localization + Detection):
-The features is extracted from the feature map of the Grad-CAM model based on the bounding box coordinates.
+### 2. Variant 2: Localization-aided FE (L-FE):
+The features is extracted from the feature map of the classification model based on the bounding box coordinates.
 ```bash
 python3.6 bbox_extract_feature.py
 ```
 
-### 3. Method 3 (Localization):
-The features is extracted from the feature map of the Grad-CAM model directly based on the heatmap (no bounding box generation).
+### 3. Variant 3: Single-pass Localization-aided FE (SL-FE):
+The features is extracted from the feature map of the classification model in a single-pass based on the heatmap (no bounding box generation).
 ```bash
 python3.6 heatmap_extract_feature.py
 ```
