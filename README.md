@@ -29,7 +29,7 @@ We are using the dataset from [Cholec80](http://camma.u-strasbg.fr/datasets) and
 
 **To be added**
 
-## Grad-CAM Model Training
+## Classification Model Training
 
 Run `python3.6 baseline.py` to start training the Grad-CAM model. Ensure `save` is set to `True` as this checkpoint will be used for visualization and feature extraction later.
 
