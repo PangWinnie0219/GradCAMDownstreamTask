@@ -29,7 +29,6 @@ We are using the dataset from [Cholec80](http://camma.u-strasbg.fr/datasets) and
 
 Cholec80 dataset: As the tissue label is required for captioning and interaction tasks, we added one extra label at the end of the original tool annotations of **all samples**, as shown in figure below. Since many types of tissues are present in the Cholec80 datasets (e.g. gallbladder, cystic plate and liver), the tissue label added in this work does not refer to the specific tissue but referring to the interacting tissue. For simplicity, we assume interacting tissue appears at all the frames in Cholec80 dataset.
 
-!(https://github.com/PangWinnie0219/GradCAMDownstreamTask/blob/master/figures/cholec80_tool_label.pdf?raw=true)
 
 ## Classification Model Training
 
