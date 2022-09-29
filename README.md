@@ -27,7 +27,9 @@ pip install -r requirements.txt
 
 We are using the dataset from [Cholec80](http://camma.u-strasbg.fr/datasets) and Robotic Instrument Segmentation Dataset from MICCAI2018 Endoscopic Vision Challenge.
 
-**To be added**
+Cholec80 dataset: As the tissue label is required for captioning and interaction tasks, we added one extra label at the end of the original tool annotations of all samples, as shown in figure below.
+
+![alt text](https://github.com/PangWinnie0219/GradCAMDownstreamTask/blob/master/image.jpg?raw=true)
 
 ## Classification Model Training
 
