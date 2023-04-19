@@ -6,7 +6,7 @@ We develop a detector-free gradient-based localized feature extraction approach 
 report generation and tool-tissue interaction graph prediction. We eliminate the need for object detection or region proposal and feature extraction networks by extracting the features of interest from the discriminative regions in the feature map of the classification models. Here, the discriminative regions are
 localized using gradient-based localization techniques (e.g. Grad-CAM). We show that our proposed approaches enable the realtime deployment of end-to-end models for surgical downstream tasks.
 
-![architecture](https://github.com/PangWinnie0219/GradCAMDownstreamTask/blob/master/figures/architecture.pdf)
+![architecture](https://github.com/PangWinnie0219/GradCAMDownstreamTask/blob/master/figures/architecture.jpg)
 
 If you find our code or paper useful, please cite as
 ```
