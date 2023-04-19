@@ -82,8 +82,7 @@ python3.6 miccai_bbox.py --bidx 15  --tclass 3
 The threshold, T_ROI can be defined using `threshold` to see the effect of thresholding to the bounding box generation. 
 
 
-### Examples of the Grad-CAM heatmap and bounding box
-**Examples of the Grad-CAM heatmap and bounding box can be found in [supplementary video](https://drive.google.com/file/d/1aBYgbjTu8fPJPZBepve7lg24Uy2L3qSw/view?usp=sharing).**
+**Examples of the Grad-CAM heatmap and bounding box can be found in the [supplementary video](https://drive.google.com/file/d/1aBYgbjTu8fPJPZBepve7lg24Uy2L3qSw/view?usp=sharing).**
 
 ## Feature Extraction 
 Set the result_filename in the code to accordingly if you are training the Grad-CAM model from scratch. If you are using our checkpoint, set `gc_model` to `1`, `2` `3` or `4`
