@@ -1,12 +1,24 @@
 # Rethinking Feature Extraction: Gradient-based Localized Feature Extraction for End-to-End Surgical Downstream Tasks
 
-This repository contains the reference code for the paper "Rethinking Feature Extraction: Gradient-based Localized Feature Extraction for End-to-End Surgical Downstream Tasks"
+This repository contains the reference code for the paper "[Rethinking Feature Extraction: Gradient-based Localized Feature Extraction for End-to-End Surgical Downstream Tasks](https://discovery.ucl.ac.uk/id/eprint/10159683/1/Rethinking_Feature_Extraction_Gradient-based_Localized_Feature_Extraction_for_End-to-End_Surgical_Downstream_Tasks.pdf)." 
 
+We develop a detector-free gradient-based localized feature extraction approach that enables end-to-end model training for downstream surgical tasks such as
+report generation and tool-tissue interaction graph prediction. We eliminate the need for object detection or region proposal and feature extraction networks by extracting the features of interest from the discriminative regions in the feature map of the classification models. Here, the discriminative regions are
+localized using gradient-based localization techniques (e.g. Grad-CAM). We show that our proposed approaches enable the realtime deployment of end-to-end models for surgical downstream tasks.
 
-## Introduction
-
-**To be added**
-
+If you find our code or paper useful, please cite as
+```
+@article{pang2022rethinking,
+  title={Rethinking Feature Extraction: Gradient-Based Localized Feature Extraction for End-To-End Surgical Downstream Tasks},
+  author={Pang, Winnie and Islam, Mobarakol and Mitheran, Sai and Seenivasan, Lalithkumar and Xu, Mengya and Ren, Hongliang},
+  journal={IEEE Robotics and Automation Letters},
+  volume={7},
+  number={4},
+  pages={12623--12630},
+  year={2022},
+  publisher={IEEE}
+}
+```
 
 ## Environment setup
 1. Clone the repository 
