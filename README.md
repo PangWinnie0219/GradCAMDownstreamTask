@@ -1,12 +1,14 @@
 # Rethinking Feature Extraction: Gradient-based Localized Feature Extraction for End-to-End Surgical Downstream Tasks
 
-This repository contains the reference code for the paper "[Rethinking Feature Extraction: Gradient-based Localized Feature Extraction for End-to-End Surgical Downstream Tasks](https://discovery.ucl.ac.uk/id/eprint/10159683/1/Rethinking_Feature_Extraction_Gradient-based_Localized_Feature_Extraction_for_End-to-End_Surgical_Downstream_Tasks.pdf)." 
+This repository contains the reference code for the paper "[Rethinking Feature Extraction: Gradient-based Localized Feature Extraction for End-to-End Surgical Downstream Tasks](https://discovery.ucl.ac.uk/id/eprint/10159683/1/Rethinking_Feature_Extraction_Gradient-based_Localized_Feature_Extraction_for_End-to-End_Surgical_Downstream_Tasks.pdf)." To learn more about the project, check out our [presentation video](https://www.youtube.com/watch?v=wPvV8IvS2tE).
 
 We develop a detector-free gradient-based localized feature extraction approach that enables end-to-end model training for downstream surgical tasks such as
 report generation and tool-tissue interaction graph prediction. We eliminate the need for object detection or region proposal and feature extraction networks by extracting the features of interest from the discriminative regions in the feature map of the classification models. Here, the discriminative regions are
 localized using gradient-based localization techniques (e.g. Grad-CAM). We show that our proposed approaches enable the realtime deployment of end-to-end models for surgical downstream tasks.
 
-![architecture](https://github.com/PangWinnie0219/GradCAMDownstreamTask/blob/master/figures/architecture.JPG)
+<p align="center">
+  <img src="https://github.com/PangWinnie0219/GradCAMDownstreamTask/blob/master/figures/Graphical_abstract.jpg" alt="architecture" width="80%" height="80%">
+</p>
 
 If you find our code or paper useful, please cite as
 ```
@@ -129,3 +131,6 @@ The features extracted can be used for the downstream task such as:
 - Interaction
     * Paper: [CogTree: Cognition Tree Loss for Unbiased Scene Graph Generation](https://arxiv.org/abs/2009.07526)
     * Official implementation [code](https://github.com/CYVincent/Scene-Graph-Transformer-CogTree)
+ 
+## Contact
+If you have any questions or feedback about this project, feel free to contact me at [winnie_pang@u.nus.edu](mailto:winnie_pang@u.nus.edu).
