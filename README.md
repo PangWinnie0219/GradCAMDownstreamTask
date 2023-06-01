@@ -51,15 +51,20 @@ Cholec80 dataset: As the tissue label is required for captioning and interaction
 
 Run `python3.6 baseline.py` to start training the classification model. Ensure `save` is set to `True` as this checkpoint will be used for visualization and feature extraction later.
 
-Otherwise, you can downloaded the trained model file:
-
-- GC-A: [miccai2018_9class_ResNet50_256,320_32_lr_0.001_dropout_0.2_best_checkpoint.pth.tar] (**To be added**)
-- GC-B: [miccai2018_9class_cholecResNet50_256,320_32_lr_0.001_dropout_0.2_best_checkpoint.pth.tar] (**To be added**)
-- GC-C: [miccai2018_11class_cholec_ResNet50_256,320_32_lr_0.001_best_checkpoint.pth.tar] (**To be added**)
-- GC-D: [combine_miccai18_ResNet50_256,320_170_best_checkpoint.pth.tar] (**To be added**)
+Otherwise, you can downloaded the trained model file: [`GC-A`](https://drive.google.com/file/d/1m2gJejiBO1Z-SEFG2GOmFZAIkBzabdLv/view?usp=drive_link), [`GC-B`](https://drive.google.com/file/d/1jvAN2XKf8Lut-Qs69iZb463wua6Nglzg/view?usp=drive_link), [`GC-C`](https://drive.google.com/file/d/1IwIBuE5SEScyYQ4nGX_PG9XATDfVTDYN/view?usp=drive_link), [`GC-D`](https://drive.google.com/file/d/1VgrOe5pWBH2D53_Al72EjDV4ukcfsMVj/view?usp=drive_link). 
 
 Place the trained model file inside the `./best_model_checkpoints`.
 
+The result reported in the main table is from [`GC-D`](https://drive.google.com/file/d/1VgrOe5pWBH2D53_Al72EjDV4ukcfsMVj/view?usp=drive_link).
+
+| Model  | Cholec80 | Endovis18 | Class Label |
+| ----- | ------------- | ------------- | ------------- |
+| GC-A  |       | Training  | bipolar forceps, prograsp forceps, large needle driver, clip applier, monopolar curved scissors, suction, ultrasound probe, stapler, tissue  |
+| GC-B  | Training  | Fine-tuning  | bipolar forceps, prograsp forceps, large needle driver, clip applier, monopolar curved scissors, suction, ultrasound probe, stapler, tissue  |
+| GC-C  | Training  | Fine-tuning  | bipolar forceps, prograsp forceps, large needle driver, clip applier, monopolar curved scissors, suction, ultrasound probe, stapler, **hook**, **specimen bag**, tissue  |
+| GC-D  | Training  | Training |bipolar forceps, prograsp forceps, large needle driver, clip applier, monopolar curved scissors, suction, ultrasound probe, stapler, **hook**, **specimen bag**, tissue |
+
+*hook* and *specimen bag* only appear in Cholec80 dataset.
 
 ## Grad-CAM Heatmap and Bounding Box Visualization
 
