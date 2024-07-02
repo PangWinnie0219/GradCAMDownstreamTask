@@ -41,15 +41,15 @@ pip install -r requirements.txt
 
 ## Data Preprocessing
 
-We are using the dataset from [Cholec80](http://camma.u-strasbg.fr/datasets) and Robotic Instrument Segmentation Dataset from MICCAI2018 Endoscopic Vision Challenge.
+We are using the dataset from [Cholec80](http://camma.u-strasbg.fr/datasets) and [Robotic Instrument Segmentation Dataset from MICCAI2018 Endoscopic Vision Challenge](https://endovissub2018-roboticscenesegmentation.grand-challenge.org/Data/).
 
 Cholec80 dataset: As the tissue label is required for captioning and interaction tasks, we added one extra label at the end of the original tool annotations of **all samples**, as shown in figure below. Since many types of tissues are present in the Cholec80 datasets (e.g. gallbladder, cystic plate and liver), the tissue label added in this work does not refer to the specific tissue but referring to the interacting tissue. For simplicity, we assume interacting tissue appears at all the frames in Cholec80 dataset.
 
 ![cholec80](https://github.com/PangWinnie0219/GradCAMDownstreamTask/blob/master/figures/cholec80_tool_label.jpg)
 
-## Classification Model Training
 
-Run `python3.6 baseline.py` to start training the classification model. Ensure `save` is set to `True` as this checkpoint will be used for visualization and feature extraction later.
+## Classification Model Training
+Run `get_paths_labels.py` to generate the files needed for the training. Then, run `baseline.py` to start training the classification model. Ensure `save` is set to `True` as this checkpoint will be used for visualization and feature extraction later. 
 
 Otherwise, you can downloaded the trained model file: [`GC-A`](https://drive.google.com/file/d/1m2gJejiBO1Z-SEFG2GOmFZAIkBzabdLv/view?usp=drive_link), [`GC-B`](https://drive.google.com/file/d/1jvAN2XKf8Lut-Qs69iZb463wua6Nglzg/view?usp=drive_link), [`GC-C`](https://drive.google.com/file/d/1IwIBuE5SEScyYQ4nGX_PG9XATDfVTDYN/view?usp=drive_link), [`GC-D`](https://drive.google.com/file/d/1VgrOe5pWBH2D53_Al72EjDV4ukcfsMVj/view?usp=drive_link). 
 
